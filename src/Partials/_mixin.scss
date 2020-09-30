@@ -1,0 +1,13 @@
+@mixin listStyleNone {
+    list-style: none;
+}
+
+@mixin displayFlEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin displayFlStart {
+    display: flex;
+    justify-content: flex-start;
+}

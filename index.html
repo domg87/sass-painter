@@ -4,29 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Painter</title>
 </head>
 <body>
-
+    <!-- container -->
     <div class="container">
+        <!--  header -->
         <header>
-            <div class="header-top"></div>
-            <div class="header-bottom">
-                <div class="header__logo"></div>
-                <div class="header__list-menu"></div>
+            <div class="header-top">
+                <ul class="list-header-top">
+                    <li><a href="#"></a><i class="fas fa-phone-alt"></i></li>
+                    <li><a href="#"></a>1-877-582-6735</li>
+                    <li><a href="#"></a><i class="fas fa-comment-alt"></i></li>
+                    <li><a href="#"></a>Chat</li>
+                    <li><a href="#"></a><i class="fas fa-user-alt"></i></li>
+                    <li><a href="#"></a>Sign in</li>
+                    <li><a href="#"></a><i class="fas fa-shopping-cart"></i></li>
+                    <li><a href="#"></a>Cart</li>
+                    <select name="lang" id="lang">
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                        <option value="fr">Francais</option>
+                        <option value="jp">日本語</option>
+                        <option value="tw">繁體中文</option>
+                    </select>
+                </ul>
             </div>
+            <nav class="header-bottom">
+                <div class="header__logo">
+                    <img src="img/logo_painter.png" alt="logo" class="logo-painter">
+                </div>
+                <div class="header__list-menu">
+                    <ul class="list-header-bottom">
+                        <li><a href="#"></a>products <i class="fas fa-angle-down"></i></li>
+                        <li><a href="#"></a>brushes <i class="fas fa-angle-down"></i></li>
+                        <li><a href="#"></a>wacom tablets</li>
+                        <li><a href="#"></a>special offers</li>
+                        <li><a href="#"></a>free trials</li>
+                        <li><a href="#"></a>business</li>
+                        <li><a href="#"></a>support <i class="fas fa-angle-down"></i></li>
+                        <li><a href="#"></a>learning <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
+        <!--  fine header -->
 
-        <div class="jumbotron"></div>
+        <!-- hero jumbo -->
+        <div class="jumbotron">
+            <div class="container-jumbo">
+                <div class="info-prod">
+                    <h1>Painter Essentials 7 (Windows/Mac)</h1>
+                    <h2>Painting software for beginners</h2>
+                    <ul>
+                        <li>User-friendly interface</li>
+                        <li>AI-based photo painting</li>
+                        <li>Industry-acclaimed brushes</li>
+                        <li>Incredible speed</li>
+                        <li>Built-in learning</li>      
+                    </ul>
+                </div>
+                <div class="box-price"></div>
+            </div>
+        </div>
+        <!-- fine hero jumbo -->
 
+        <!-- main -->
         <main>
             <section></section>
             <section></section>
             <section></section>
         </main>
-
+        <!-- fine main -->
+        <!-- footer -->
         <footer></footer>
+        <!-- fine footer -->
     </div>
-    
+    <!-- fine container -->
+    <script src="dist/app.js"></script>
 </body>
 </html>

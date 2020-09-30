@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1980px;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+}
+
+header .header-top {
+  height: 50px;
+  margin-top: 20px;
+  padding-right: 20%;
+}
+
+header .header-top .list-header-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .header-top .list-header-top li {
+  list-style: none;
+  padding-right: 20px;
+  color: #fff;
+}
+
+header .header-bottom {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20%;
+  padding-bottom: 20px;
+}
+
+header .header-bottom img {
+  height: 25px;
+}
+
+header .header-bottom .header__list-menu {
+  align-self: flex-end;
+  padding-left: 40px;
+}
+
+header .header-bottom .header__list-menu .list-header-bottom {
+  display: flex;
+}
+
+header .header-bottom .header__list-menu .list-header-bottom li {
+  list-style: none;
+  padding-right: 20px;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.jumbotron {
+  background-image: url(/images/hero.jpg?5e55fa71ee0fe7e0661bd53b02814747);
+  height: 500px;
+  background-color: lightcoral;
+  position: relative;
+}
+
+.jumbotron .container-jumbo {
+  display: flex;
+}
+
+.jumbotron .info-prod {
+  float: left;
+  height: 500px;
+  margin-left: 40%;
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.jumbotron li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.jumbotron .box-price {
+  float: right;
+  height: 500px;
+  width: 400px;
+  background-color: red;
+}
+

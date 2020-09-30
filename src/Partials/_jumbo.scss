@@ -1,0 +1,30 @@
+.jumbotron {
+    background-image: url("../src/../img/hero.jpg");
+    height: 500px;
+    background-color: lightcoral;
+    position: relative;
+
+    .container-jumbo {
+        display: flex;
+    }
+
+    .info-prod {
+        float: left;
+        height: 500px;
+        margin-left: 40%;
+        margin-top: 30px;
+        background-color: #000;
+        color: #fff;
+    }
+    li {
+        @include listStyleNone;
+        padding-left: 20px;
+    }
+
+    .box-price {
+        float: right;
+        height: 500px;
+        width: 400px;
+        background-color: red;
+    }
+}
