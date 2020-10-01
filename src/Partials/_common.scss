@@ -1,3 +1,22 @@
+// variabili
+$titleSize: 40px;
+
+
+// tipografy
+h1 {
+    font-size: $titleSize;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 2;
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,4 +30,14 @@ body {
 .container {
     
     width: 100%;
+}
+
+// bottoni
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 5px;
+    border-radius: 2px;
+    color: #000;
+    max-width: 150px;
 }

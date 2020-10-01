@@ -1,30 +1,128 @@
 .jumbotron {
-    background-image: url("../src/../img/hero.jpg");
+    background-image: url("../img/hero.jpg");
     height: 500px;
     background-color: lightcoral;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     .container-jumbo {
         display: flex;
+        
     }
 
     .info-prod {
         float: left;
-        height: 500px;
-        margin-left: 40%;
+        margin-left: 30%;
         margin-top: 30px;
-        background-color: #000;
         color: #fff;
+        @include clearfix;
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+            line-height: 3;
+        }
+      
     }
+
     li {
         @include listStyleNone;
-        padding-left: 20px;
+    }
+
+    .btn-download {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        background: $color-grey;
+        color: #fff;
+        text-transform: capitalize;
+        line-height: 1.5;
+        
+
+        .box-text-download {
+            width: 100%;
+
+            p {
+                display: inline-block;
+                width: 85%;
+                vertical-align: middle;
+                border-right: 1px solid #fff;
+            }
+
+            i {
+                display: inline-block;
+                margin-left: 5px;
+                color: #fff;
+            }
+        }
+        
+
     }
 
     .box-price {
-        float: right;
-        height: 500px;
-        width: 400px;
-        background-color: red;
+        position: relative;        
+        width: 25%;
+        padding: 50px;
+        margin: 20px 0 0 20px;
+        background-color: #000;
+        color: #fff;
+
+        .price-30-day {
+            position: absolute;
+            top: 20px;
+            right: 80px;
+        }
+
+        img {
+            width: 80px;
+        }
+        .price-discount {
+            
+            line-height: 1.5;
+            margin-bottom: 20px;
+
+            .price {
+                font-size: 30px;
+            }
+
+        }
+
+        .btn-buy-card {
+            padding: 10px 40px 10px 40px;
+            font-size: 18px;
+            color: #fff;
+            background-color: $color-lightBlue;
+            border: none;
+            cursor: pointer;
+        }
+
+        .price-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: $color-lightGrey;
+            line-height: 2;
+            text-decoration: none;
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+
+            p {
+                text-transform: capitalize;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            span {
+                color: $color-lightBlue;
+            }
+        }
     }
+
 }

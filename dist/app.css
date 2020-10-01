@@ -1,3 +1,12 @@
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,51 +21,53 @@ body {
   width: 100%;
 }
 
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 5px;
+  border-radius: 2px;
+  color: #000;
+  max-width: 150px;
+}
+
 header {
   display: flex;
   flex-direction: column;
   height: 100px;
   width: 100%;
   background-color: #000;
+  text-transform: capitalize;
 }
-
 header .header-top {
   height: 50px;
   margin-top: 20px;
   padding-right: 20%;
 }
-
 header .header-top .list-header-top {
   display: flex;
   justify-content: flex-end;
 }
-
 header .header-top .list-header-top li {
   list-style: none;
   padding-right: 20px;
   color: #fff;
 }
-
 header .header-bottom {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20%;
+  padding-left: 15%;
   padding-bottom: 20px;
 }
-
 header .header-bottom img {
   height: 25px;
 }
-
 header .header-bottom .header__list-menu {
   align-self: flex-end;
   padding-left: 40px;
 }
-
 header .header-bottom .header__list-menu .list-header-bottom {
   display: flex;
 }
-
 header .header-bottom .header__list-menu .list-header-bottom li {
   list-style: none;
   padding-right: 20px;
@@ -65,34 +76,106 @@ header .header-bottom .header__list-menu .list-header-bottom li {
 }
 
 .jumbotron {
-  background-image: url(/images/hero.jpg?5e55fa71ee0fe7e0661bd53b02814747);
+  background-image: url("../img/hero.jpg");
   height: 500px;
   background-color: lightcoral;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 .jumbotron .container-jumbo {
   display: flex;
 }
-
 .jumbotron .info-prod {
   float: left;
-  height: 500px;
-  margin-left: 40%;
+  margin-left: 30%;
   margin-top: 30px;
+  color: #fff;
+  content: "";
+  display: table;
+  clear: both;
+}
+.jumbotron .info-prod ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  line-height: 3;
+}
+.jumbotron li {
+  list-style: none;
+}
+.jumbotron .btn-download {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  background: #666;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.jumbotron .btn-download .box-text-download {
+  width: 100%;
+}
+.jumbotron .btn-download .box-text-download p {
+  display: inline-block;
+  width: 85%;
+  vertical-align: middle;
+  border-right: 1px solid #fff;
+}
+.jumbotron .btn-download .box-text-download i {
+  display: inline-block;
+  margin-left: 5px;
+  color: #fff;
+}
+.jumbotron .box-price {
+  position: relative;
+  width: 25%;
+  padding: 50px;
+  margin: 20px 0 0 20px;
   background-color: #000;
   color: #fff;
 }
-
-.jumbotron li {
-  list-style: none;
-  padding-left: 20px;
+.jumbotron .box-price .price-30-day {
+  position: absolute;
+  top: 20px;
+  right: 80px;
 }
-
-.jumbotron .box-price {
-  float: right;
-  height: 500px;
-  width: 400px;
-  background-color: red;
+.jumbotron .box-price img {
+  width: 80px;
 }
-
+.jumbotron .box-price .price-discount {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.jumbotron .box-price .price-discount .price {
+  font-size: 30px;
+}
+.jumbotron .box-price .btn-buy-card {
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #009cff;
+  border: none;
+  cursor: pointer;
+}
+.jumbotron .box-price .price-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e6e6e6;
+  line-height: 2;
+  text-decoration: none;
+}
+.jumbotron .box-price .price-info h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.jumbotron .box-price .price-info p {
+  text-transform: capitalize;
+}
+.jumbotron .box-price .price-info a {
+  text-decoration: none;
+  color: #000;
+}
+.jumbotron .box-price .price-info span {
+  color: #009cff;
+}
