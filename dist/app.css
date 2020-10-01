@@ -15,6 +15,7 @@ h2 {
 
 body {
   max-width: 1980px;
+  position: relative;
 }
 
 .container {
@@ -73,6 +74,78 @@ header .header-bottom .header__list-menu .list-header-bottom li {
   padding-right: 20px;
   margin: 0 20px;
   color: #fff;
+}
+
+.prod-nav {
+  width: 100%;
+  background-color: #e6e6e6;
+}
+.prod-nav .prod-nav-list {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.prod-nav .prod-nav-list li {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 20px 25px;
+}
+.prod-nav .prod-nav-list li:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tab-content .intro {
+  width: 100%;
+  background-image: url("../img/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-content .intro .text-container {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+.tab-content .intro .text-container h2 {
+  font-size: 25px;
+}
+.tab-content .intro .text-container p {
+  font-size: 20px;
+}
+.tab-content .intro .text-container a {
+  text-decoration: none;
+}
+.tab-content .intro .text-container img {
+  margin-top: 20px;
+  width: 30px;
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+.tab-content .intro .text-container span {
+  color: #fff;
+  font-size: 20px;
+}
+.tab-content .intro .img-container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tab-content .intro .img-container .intro-img {
+  position: relative;
+}
+.tab-content .intro .img-container .intro-img .first {
+  width: 96%;
+  border-radius: 10px;
+}
+.tab-content .intro .img-container .intro-img .second {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .jumbotron {

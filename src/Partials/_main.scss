@@ -1,0 +1,102 @@
+// --- SECTION PRODOTTI --- //
+.prod-nav {
+    width: 100%;
+    //position: fixed;
+    background-color: $color-lightGrey;
+
+    .prod-nav-list {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        li {
+            list-style: none;
+            text-transform: uppercase;
+            padding: 20px 25px;
+
+            &:hover {
+                background-color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+// --- FINE SECTION PRODOTTI --- //
+
+// ---- SEZIONE INTRO --- //
+
+.tab-content {
+   
+
+    .intro {
+        
+        width: 100%;
+        background-image: url("../img/intro.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+        .text-container {
+            text-align: center;
+            color: #fff;
+            padding: 50px 0;
+            line-height: 1.5;
+            vertical-align: middle;
+            
+
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                margin-top: 20px;
+                width: 30px;
+                vertical-align: bottom;
+                margin-right: 20px;
+            }
+
+            span {
+                color: #fff;
+                font-size: 20px;
+            }
+            
+        }
+
+        .img-container {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+
+
+            .intro-img {
+                position: relative;
+
+                .first {
+                    width: 96%;
+                    border-radius: 10px;
+                }
+
+                .second {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+// ---- SEZIONE INTRO --- //
